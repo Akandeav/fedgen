@@ -10,7 +10,9 @@ uses a docker image found [here](https://hub.docker.com/r/sorokine/docker-colab-
 2. ssh into FEDGEN cloud colab instance  
 In your terminal enter:  
 ```ssh -i <victor-key location> ubuntu@172.16.60.154```  
-you should be logged in with a prompt like this ```ubuntu@colab``` in your terminal.    
+you should be logged in with a prompt like this ```ubuntu@colab``` in your terminal.  
+If you get an error like ```victor-key is a public key```, run:  
+```chmod 500 <victor-key/location>```      
 
 3. Run the following command to launch the colab server  
 ~~~
