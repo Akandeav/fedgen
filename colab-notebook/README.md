@@ -17,10 +17,10 @@ If you get an error like ```victor-key is a public key```, run:
 3. Run the following command to launch the colab server  
 ~~~
 docker run \
-> -it --rm -p 8081:8081 \
-> -v "$PWD":/opt/colab \
-> -v $HOME/.cache/torch:/root/.cache/torch \
-> sorokine/docker-colab-local:latest
+ -it --rm -p 8081:8081 \
+ -v "$PWD":/opt/colab \
+ -v $HOME/.cache/torch:/root/.cache/torch \
+ sorokine/docker-colab-local:latest
 ~~~  
 if you get a token like this, ```token=5ee95811e30955ce07be864b32299f5f4c4f14d339161460```,  or  
 a url like ```http://localhost:8081/?token=abcdef123456...```, proceed to step 4.  
